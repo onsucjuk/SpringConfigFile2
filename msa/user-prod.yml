@@ -37,10 +37,10 @@ spring:
     url: jdbc:mariadb://192.168.112.128:3306/myDB
   application:
     name: USER-SERVICE
-  #boot:
-  #  admin:
-  #    client: # Spring Boot Actuator Admin UI Server
-  #      url: http://${ADMIN-MANAGER-IP}:${ADMIN-MANAGER-PORT}
+  boot:
+    admin:
+      client: # Spring Boot Actuator Admin UI Server
+        url: http://localhost:15000
 jwt:
   token:
     creator: poly
